@@ -31,30 +31,26 @@
 | 367              | 有效的完全平方数（简单难度）                           |        | https://leetcode-cn.com/problems/valid-perfect-square/       |
 | 34               | 在排序数组中查找元素的第一个和最后一个位置（中等难度） |        | https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/ |
 
-### 3、双指针法类
+### 3、双指针法类（13道题目）
 
 通过快慢指针化双重循环为单重循环问题，常见于数组、链表、字符串等操作
 
-| **LeetCode题目** | **相关题目类型**                    | 关键点                                                       | **相关链接**                                                 |
-| ---------------- | ----------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 27               | 移除元素（简单难度）                |                                                              | https://leetcode-cn.com/problems/remove-element/             |
-| 26               | 删除排序数组中的重复项（简单难度）  |                                                              | https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/ |
-| 283              | 移动零（简单难度）                  |                                                              | https://leetcode-cn.com/problems/move-zeroes/                |
-| 977              | 有序数组的平方（简单难度）          |                                                              | https://leetcode-cn.com/problems/squares-of-a-sorted-array/  |
-| 169              | 多数元素（中等难度）                | 求解有序数组的众数，使用相邻位的快慢指针法                   | https://leetcode-cn.com/problems/majority-element/           |
-| 203              | 移除链表元素（简单难度）            |                                                              | https://leetcode-cn.com/problems/remove-linked-list-elements/ |
-| 206              | 反转链表（简单难度）                | pre和cur节点边遍历边反转                                     | https://leetcode-cn.com/problems/reverse-linked-list/        |
-| 92               | 反转链表II（中等难度）              |                                                              | https://leetcode-cn.com/problems/reverse-linked-list-ii/     |
-| 234              | 回文链表（简单难度）                | 根据快慢指针找到中点；反转后半段；比较前后两端节点值         | https://leetcode-cn.com/problems/palindrome-linked-list/     |
-| 19               | 删除链表的倒数第N个节点（中等难度） | 让快指针先走N步，让后判断此时快指针是否存在；存在则快慢指针同时走 | https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/ |
-| 141              | 环形链表（简单难度）                | 快慢指针，若指针相遇则判断有环                               | https://leetcode-cn.com/problems/linked-list-cycle/          |
-| 142              | 环形链表II（中等难度）              | 指针环内相遇后，两个节点分别从head和相遇点出发，再次相遇点即是环入口 | https://leetcode-cn.com/problems/linked-list-cycle-ii/       |
-| 面试题02.07.     | 链表相交（简单难度）                | 长链表的遍历节点先多走和短链表的长度差个节点，然后同时遍历两个节点比较是否存在相同节点 | https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/ |
+| **LeetCode题目** | **相关题目类型**                    | 题目简述 | 关键点                                                       | **相关链接**                                                 |
+| ---------------- | ----------------------------------- | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+|                  |                                     |          |                                                              |                                                              |
+| 206              | 反转链表（简单难度）                |          | pre和cur节点边遍历边反转                                     | https://leetcode-cn.com/problems/reverse-linked-list/        |
+| 92               | 反转链表II（中等难度）              |          |                                                              | https://leetcode-cn.com/problems/reverse-linked-list-ii/     |
+| 234              | 回文链表（简单难度）                |          | 根据快慢指针找到中点；反转后半段；比较前后两端节点值         | https://leetcode-cn.com/problems/palindrome-linked-list/     |
+| 19               | 删除链表的倒数第N个节点（中等难度） |          | 让快指针先走N步，让后判断此时快指针是否存在；存在则快慢指针同时走 | https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/ |
+| 141              | 环形链表（简单难度）                |          | 快慢指针，若指针相遇则判断有环                               | https://leetcode-cn.com/problems/linked-list-cycle/          |
+| 142              | 环形链表II（中等难度）              |          | 指针环内相遇后，两个节点分别从head和相遇点出发，再次相遇点即是环入口 | https://leetcode-cn.com/problems/linked-list-cycle-ii/       |
+| 面试题02.07.     | 链表相交（简单难度）                |          | 长链表的遍历节点先多走和短链表的长度差个节点，然后同时遍历两个节点比较是否存在相同节点 | https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/ |
 
 ### 4、哈希频率类
 
 | **LeetCode题目** | **相关题目类型**                       | 关键点                                                       | **相关链接**                                                 |
 | ---------------- | -------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 169              | 多数元素（中等难度）                   |                                                              | https://leetcode-cn.com/problems/majority-element/           |
 | 242              | 有效的字母异位词（简单难度）           | 统计字母频率，或者排序，API的使用，26个数组值的定义          | https://leetcode-cn.com/problems/valid-anagram/              |
 | 383              | 赎金信（简单难度）                     | 统计字母串的先后顺序                                         | https://leetcode-cn.com/problems/ransom-note/                |
 | 49               | 字母异位词分组（中等难度）             | 将排序后的字符串作为key去存取；熟悉对哈希表的遍历操作        | https://leetcode-cn.com/problems/group-anagrams/             |
@@ -128,6 +124,16 @@
 
 - [x] ### 【二叉树】42道
 
-
 [二叉树与二叉搜索树目录](./06二叉树/00二叉树与二叉搜索树目录.md)
 
+- [ ] ### 【回溯算法】15道
+
+[回溯算法目录](./07回溯算法/00回溯算法目录.md)
+
+- [ ] ### 【贪心算法】18道
+
+[回溯算法目录](./07回溯算法/00回溯算法目录.md)
+
+- [ ] ### 【动态规划】40道
+
+[回溯算法目录](./07回溯算法/00回溯算法目录.md)
